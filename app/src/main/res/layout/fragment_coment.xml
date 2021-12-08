@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.ComentFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comentarios"
+        android:textSize="@dimen/text_size_title"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="@color/secondary_text"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/comment_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+    tools:spanCount="1"
+    tools:listitem="@layout/item_comment"
+    />
+
+</LinearLayout>

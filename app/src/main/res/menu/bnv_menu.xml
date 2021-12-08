@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/vector_home"
+        />
+    <item
+        android:id="@+id/productsFragment"
+        android:title="Productos"
+        android:icon="@drawable/vector_menu"
+        />
+    <item
+        android:id="@+id/locationShop"
+        android:title="Ubicación"
+        android:icon="@drawable/vector_ubicacion"
+        />
+    <item
+        android:id="@+id/perfilFragment"
+        android:title="Perfil"
+        android:icon="@drawable/vector_person"
+        />
+</menu>

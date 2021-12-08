@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--            <ImageView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/toolbar_alto"-->
+    <!--                android:src="@drawable/logo_market_nuevo"/>-->
+
+    <!--        <Toolbar-->
+    <!--            android:id="@+id/toolBarMain"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            -->
+    <!--        </Toolbar>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <include
+            layout="@layout/content_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bntMenu" />
+
+        <!--        <fragment-->
+        <!--            android:id="@+id/fragmentContent"-->
+        <!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_above="@+id/bntMenu"-->
+        <!--            app:defaultNavHost="true"-->
+        <!--            app:navGraph="@navigation/nav_grah" />-->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bnv_menu" />
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

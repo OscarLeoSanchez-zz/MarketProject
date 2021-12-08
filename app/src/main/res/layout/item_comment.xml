@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/item_image_comment_view"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:src="@drawable/vector_person"
+                tools:src="@drawable/vector_person"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemCommentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:gravity="left|top"
+                android:textSize="@dimen/text_size_title"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:rating="2"
+                android:isIndicator="true"
+                android:stepSize="0.4"
+                style="?android:attr/ratingBarStyleSmall"
+                android:outlineSpotShadowColor="#FFEB3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                android:gravity="left|top"
+                android:textSize="@dimen/text_size"
+                android:textColor="#918888"
+                android:ellipsize="end"
+                android:lines="5"
+                />
+            <TextView
+                android:id="@+id/item_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22 de enero de 2021"
+                android:gravity="left|top"
+                android:textSize="@dimen/text_size_subtitle"
+                android:textColor="#918888"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
